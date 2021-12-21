@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/detistDashboard.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <title>Dentist Dashboard</title>
+</head>
+<body>
+<header class="header">
+    <div class="search">
+        <input type="text" placeholder="Search patient">
+        <button type="submit" class="search__btn"><i class="fas fa-search"></i></button>
+    </div>
+    <button class="add__btn"><i class="fas fa-calendar-plus"></i>Add appointment</button>
+    <div class="user">
+        <img src="images/dentist__icon.png" alt="avatar" class="avatar">
+        <div class="user__info">
+            <p class="user__name">Poxos Poxosyan</p>
+            <p class="user__special">
+                Therapy
+            </p>
+        </div>
+    </div>
+    <div class="nav">
+        <a href=""><i class="fas fa-bell"></i></a>
+        <a href=""><i class="fas fa-globe-europe"></i></a>
+        <a href=""><i class="fas fa-sign-out-alt"></i></a>
+    </div>
+</header>
+<nav class="navbar">
+    <div class="logo" id="logo">
+        <a href="index.html">
+            <img src="images/logo.png" alt="logo">
+            <p class="logo__text">DentApp</p>
+        </a>
+    </div>
+    <ul class="nav__list">
+        <li class="nav__item">
+            <a href="dentistDashboard.html" class="nav__link active"><i class="fas fa-clinic-medical"></i>My Dasboard</a>
+        </li>
+        <li class="nav__item">
+            <a href="myPatients.html" class="nav__link"><i class="fas fa-users"></i>My Patients</a>
+        </li>
+        <li class="nav__item">
+            <a href="" class="nav__link"><i class="fas fa-calendar-alt"></i>Appointments</a>
+        </li>
+
+        <li class="nav__item">
+            <a href="dentistFinance.html" class="nav__link"><i class="fas fa-money-check-alt"></i>Finance</a>
+        </li>
+        <li class="nav__item">
+            <a href="" class="nav__link"><i class="fas fa-user-cog"></i>Profile</a>
+        </li>
+        <li class="nav__item">
+            <a href="" class="nav__link"><i class="fas fa-cogs"></i>Settings</a>
+        </li>
+
+    </ul>
+</nav>
+<section class="wrapper">
+    <section class="content">
+        <div class="row info__tabs">
+            <div class="box total__patients__info__box">
+                <div class="box__inner">
+                    <h1>10</h1>
+                    <p>Total patients</p>
+                    <div class="icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+                <a href="">view more <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+            <div class="box total__appointments__info__box">
+                <div class="box__inner">
+                    <h1>10</h1>
+                    <p>Total appointments</p>
+                    <div class="icon">
+                        <i class="fas fa-calendar-plus"></i>
+                    </div>
+                </div>
+                <a href="">view more <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+            <div class="box upcoming__appointments__info__box">
+                <div class="box__inner">
+                    <h1>10</h1>
+                    <p>Upcoming appointments</p>
+                    <div class="icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                </div>
+                <a href="">view more <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+            <div class="box completed__appointments__info__box">
+                <div class="box__inner">
+                    <h1>10</h1>
+                    <p>Completed appointments</p>
+                    <div class="icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                </div>
+                <a href="">view more <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <div class="appointments__manage">
+            <div class="col appointments__manage__btns">
+                <div class="appointments__manage__btn">
+                    <div class="icon">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <p>Add patient</p>
+                    <i class="fas fa-hospital-user"></i>
+                </div>
+                <div class="appointments__manage__btn">
+                    <div class="icon">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <p>Add appointment</p>
+                    <i class="fas fa-calendar-plus"></i>
+                </div>
+                <div class="appointments__manage__btn">
+                    <div class="icon">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <p>Add payment</p>
+                    <i class="fas  fa-money-bill-alt"></i>
+                </div>
+            </div>
+            <div class="col tabs appointments__tabs">
+                <div class="tab__header">
+                    <h3>Appointment Today - Jul 30, 2021</h3>
+                    <p>View all <i class="fas fa-calendar-alt"></i></p>
+                </div>
+                <div class="tab__nav">
+                    <i class="fas fa-filter"></i>
+                    <a href="" class="tab__link active">Pending</a>
+                    <a href="" class="tab__btn">All</a>
+                </div>
+                <table class="appointments__table">
+                    <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Patient</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Notes</th>
+                        <th>Appointment</th>
+                        <th>Edit</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="id">1</td>
+                        <td class="patient"><img src="images/patient_icon.png" alt="" class="patient__avatar__small"><span>Petros Petrosyan age 23</span></td>
+                        <td> Jul 29, 2021,11:30</td>
+                        <td class="status">Pending</td>
+                        <td>Some notes</td>
+                        <td>Tooth removing</td>
+                        <td class="edit"><i class="fas fa-ellipsis-v"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="id">2</td>
+                        <td class="patient"><img src="images/patient_icon.png" alt="" class="patient__avatar__small"><span>Petros Petrosyan age 23</span></td>
+                        <td> Jul 29, 2021,11:30</td>
+                        <td class="status">Pending</td>
+                        <td>Some notes</td>
+                        <td>Tooth removing</td>
+                        <td class="edit"><i class="fas fa-ellipsis-v"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="id">3</td>
+                        <td class="patient"><img src="images/patient_icon.png" alt="" class="patient__avatar__small"><span>Petros Petrosyan age 23</span></td>
+                        <td> Jul 29, 2021,11:30</td>
+                        <td class="status">Pending</td>
+                        <td>Some notes</td>
+                        <td>Tooth removing</td>
+                        <td class="edit"><i class="fas fa-ellipsis-v"></i></td>
+                    </tr>
+                    <tr>
+                        <td class="id">4</td>
+                        <td class="patient"><img src="images/patient_icon.png" alt="" class="patient__avatar__small"><span>Petros Petrosyan age 23</span></td>
+                        <td> Jul 29, 2021,11:30</td>
+                        <td class="status">Pending</td>
+                        <td>Some notes</td>
+                        <td>Tooth removing</td>
+
+                        <td class="edit"><i class="fas fa-ellipsis-v edit" ></i></td>
+                    </tr>
+                    <tr>
+                        <td class="id">5</td>
+                        <td class="patient"><img src="images/patient_icon.png" alt="" class="patient__avatar__small"><span>Petros Petrosyan age 23</span></td>
+                        <td> Jul 29, 2021,11:30</td>
+                        <td class="status">Pending</td>
+                        <td>Some notes</td>
+                        <td>Tooth removing</td>
+
+                        <td class="edit"><i class="fas fa-ellipsis-v edit" ></i></td>
+                    </tr>
+                    <tr>
+                        <td class="id">6</td>
+                        <td class="patient"><img src="images/patient_icon.png" alt="" class="patient__avatar__small"><span>Petros Petrosyan age 23</span></td>
+                        <td> Jul 29, 2021,11:30</td>
+                        <td class="status">Pending</td>
+                        <td>Some notes</td>
+                        <td>Tooth removing</td>
+
+                        <td class="edit"><i class="fas fa-ellipsis-v edit" ></i></td>
+                    </tr>
+                    <tr>
+                        <td class="id">7</td>
+                        <td class="patient"><img src="images/patient_icon.png" alt="" class="patient__avatar__small"><span>Petros Petrosyan age 23</span></td>
+                        <td> Jul 29, 2021,11:30</td>
+                        <td class="status">Pending</td>
+                        <td>Some notes</td>
+                        <td>Tooth removing</td>
+
+                        <td class="edit"><i class="fas fa-ellipsis-v edit" ></i></td>
+                    </tr>
+                    <tr>
+                        <td class="id">8</td>
+                        <td class="patient"><img src="images/patient_icon.png" alt="" class="patient__avatar__small"><span>Petros Petrosyan age 23</span></td>
+                        <td> Jul 29, 2021,11:30</td>
+                        <td class="status"><span>Pending</span></td>
+                        <td>Some notes</td>
+                        <td>Tooth removing</td>
+
+                        <td class="edit"><i class="fas fa-ellipsis-v edit" ></i></td>
+                    </tr> <tr>
+                        <td class="id">9</td>
+                        <td class="patient"><img src="images/patient_icon.png" alt="" class="patient__avatar__small"><span>Petros Petrosyan age 23</span></td>
+                        <td> Jul 29, 2021,11:30</td>
+                        <td class="status">Pending</td>
+                        <td>Some notes</td>
+                        <td>Tooth removing</td>
+
+                        <td class="edit"><i class="fas fa-ellipsis-v edit" ></i></td>
+                    </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+
+    </div>
+</footer>
+</body>

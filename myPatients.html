@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="styles/detistDashboard.css">
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <title>Dentist Dashboard</title>
+</head>
+<body>
+<header class="header">
+    <div class="search">
+        <input type="text" placeholder="Search patient">
+        <button type="submit" class="search__btn"><i class="fas fa-search"></i></button>
+    </div>
+    <button class="add__btn"><i class="fas fa-calendar-plus"></i>Add appointment</button>
+    <div class="user">
+        <img src="images/dentist__icon.png" alt="avatar" class="avatar">
+        <div class="user__info">
+            <p class="user__name">Poxos Poxosyan</p>
+            <p class="user__special">
+                Therapy
+            </p>
+        </div>
+    </div>
+    <div class="nav">
+        <a href=""><i class="fas fa-bell"></i></a>
+        <a href=""><i class="fas fa-globe-europe"></i></a>
+        <a href=""><i class="fas fa-sign-out-alt"></i></a>
+    </div>
+</header>
+<nav class="navbar">
+    <div class="logo" id="logo">
+        <a href="index.html"> <img src="images/logo.png" alt="logo">
+            <p class="logo__text">DentApp</p>
+        </a>
+    </div>
+    <ul class="nav__list">
+        <li class="nav__item">
+            <a href="dentistDashboard.html" class="nav__link "><i class="fas fa-clinic-medical"></i>My Dasboard</a>
+        </li>
+        <li class="nav__item">
+            <a href="myPatients.html" class="nav__link active"><i class="fas fa-users"></i>My Patients</a>
+        </li>
+        <li class="nav__item">
+            <a href="" class="nav__link"><i class="fas fa-calendar-alt"></i>Appointments</a>
+        </li>
+        <li class="nav__item">
+            <a href="dentistFinance.html" class="nav__link"><i class="fas fa-money-check-alt"></i>Finance</a>
+        </li>
+        <li class="nav__item">
+            <a href="" class="nav__link"><i class="fas fa-user-cog"></i>Profile</a>
+        </li>
+        <li class="nav__item">
+            <a href="" class="nav__link"><i class="fas fa-cogs"></i>Settings</a>
+        </li>
+
+    </ul>
+</nav>
+<section class="wrapper">
+    <section class="content">
+
+        <div class="col tabs my__patients__tabs">
+            <div class="tab__header">
+                <h4><i class="fas fa-users"></i>My patients</h4>
+                <a href="myPatientsInfo.html" class="add__btn"><i class="fas fa-user-plus"></i>Add Patient</a>
+            </div>
+            <h4 class="total__patients">Total of <span>1</span> patient(s)</h4>
+            <div class="patient__search">
+                <input type="text" placeholder="Search patient">
+                <button type="submit" class="search__btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="tab">
+             <ul class="patients__list">
+                 <li class="patients__list__item">
+                     <a href="myPatientsInfo.html" class="patient__info__page__link">
+                         <p class="id">1</p>
+                         <img src="images/patient_icon.png" alt="">
+                         <p class="patient__info">
+                             <strong>Petros Poxosi Petrosyan</strong>
+                             <br>
+                             <span>(+374)94 123456</span>
+                             <br>
+                             Last update:<span>June 22, 2021 at 14:00</span>
+                         </p>
+                     </a>
+                     <i class="fas fa-ellipsis-v"></i>
+                 </li>
+                 <li class="patients__list__item">
+                     <a href="myPatientsInfo.html" class="patient__info__page__link">
+                         <p class="id">2</p>
+                         <img src="images/patient_icon.png" alt="">
+                         <p class="patient__info">
+                             <strong>Petros Poxosi Petrosyan</strong>
+                             <br>
+                             <span>(+374)94 123456</span>
+                             <br>
+                             Last update:<span>June 22, 2021 at 14:00</span>
+                         </p>
+                     </a>
+                     <i class="fas fa-ellipsis-v"></i>
+                 </li>
+                 <li class="patients__list__item">
+                     <a href="myPatientsInfo.html" class="patient__info__page__link">
+                         <p class="id">3</p>
+                         <img src="images/patient_icon.png" alt="">
+                         <p class="patient__info">
+                             <strong>Petros Poxosi Petrosyan</strong>
+                             <br>
+                             <span>(+374)94 123456</span>
+                             <br>
+                             Last update:<span>June 22, 2021 at 14:00</span>
+                         </p>
+                     </a>
+                     <i class="fas fa-ellipsis-v"></i>
+                 </li>
+                 <li class="patients__list__item">
+                     <a href="" class="patient__info__page__link">
+                         <p class="id">4</p>
+                         <img src="images/patient_icon.png" alt="">
+                         <p class="patient__info">
+                             <strong>Petros Poxosi Petrosyan</strong>
+                             <br>
+                             <span>(+374)94 123456</span>
+                             <br>
+                             Last update:<span>June 22, 2021 at 14:00</span>
+                         </p>
+                     </a>
+                     <i class="fas fa-ellipsis-v"></i>
+                 </li>
+             </ul>
+            </div>
+        </div>
+    </section>
+</section>

@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+*,
+*:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'montserrat', sans-serif;
+  color: #565454;
+  font-size: 16px;
+  background-color: #EDF2F4;
+
+  section {
+    width: 100%;
+
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+
+  .logo__text {
+    color: #3E9BA6;
+    font-weight: bolder;
+    font-family: 'Arial Black', montserrat;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+  }
+}
+.header {
+  width: 100%;
+  display: inline-block;
+  background-color: #C6EBF7;
+  background-image: url('../images/bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  position: relative;
+
+  .nav {
+    display: flex;
+    align-items: center;
+
+
+
+    .auth__nav {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+
+      .auth__nav__link {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        color: #3E9BA6;
+        font-weight: bolder;
+        font-size: 18px;
+
+        img {
+          width: 25px;
+          margin-right: 5px;
+        }
+
+        .fa-sign-out-alt {
+          color: white;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+
+  .nav__menu {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    align-items: center;
+
+    .menu {
+      display: flex;
+      width: 100%;
+      align-items: center;
+
+      .menu__item {
+        padding: 0 5px 0 5px;
+
+        .menu__link {
+          color: #3E9BA6;
+          font-weight: bolder;
+          font-size: 18px;
+          transition: all ease-in .2s;
+          &:hover{
+            color: #167987;
+          }
+        }
+      }
+    }
+  }
+
+  .header__slider {
+    padding-bottom: 20px;
+
+    .header__slider__item {
+      display: flex;
+
+      .offer__text {
+        color: white;
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+
+      .offer__descriptor {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      img {
+        max-width: 350px;
+      }
+    }
+  }
+
+  .search__input {
+    position: absolute;
+    bottom: 30%;
+    height: 50px;
+    background: rgb(137, 205, 227);
+    background: linear-gradient(252deg, rgb(144, 245, 227) 0%, rgba(137, 205, 227, 1) 100%);
+    width: 50%;
+    border-radius: 20px;
+
+    img {
+      position: absolute;
+      top: -20px;
+    }
+
+    p {
+      padding-left: 125px;
+      font-size: 12px;
+      line-height: 50px;
+      color: #b4fafa;
+      display: block;
+    }
+
+    .fa-angle-down {
+      color: #ffffff;
+      font-size: 12px;
+    }
+
+    box-shadow: 1px 1px 100px 20px white;
+  }
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 40px;
+  text-align: center;
+  background-color: #ff253a;
+  color: white;
+  width: 170px;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all ease-in .2s;
+
+  &:hover {
+    background-color: #ff253a;
+  }
+
+  .fa-history {
+    font-size: 18px;
+    padding-right: 3px;
+  }
+}
+
+.fas {
+  font-size: 28px;
+}
+
+.page__title {
+  text-align: center;
+  color: #83D0DA;
+  font-size: 18px;
+  top: 57px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.top__clinics {
+  background-color: #DCF2FF;
+  background-image: url('../images/clinics_bg.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-y: 0;
+  padding-bottom: 70px;
+
+
+  .top__clinics__cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+    .top__clinics__card {
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 1px 1px 50px 20px #f1eeee;
+      text-align: center;
+      padding: 30px 30px 30px 30px;
+
+      .card_clinic_name {
+        color: #83D0DA;
+      }
+
+      .contacts {
+        margin: 0 auto;
+
+        p {
+          padding-top: 20px;
+        }
+
+        .rating_icon_small {
+          width: 20px;
+        }
+      }
+
+
+    }
+  }
+}
+
+.card__avatar {
+  background-image: url('../images/avatarEllipse.png');
+  background-repeat: no-repeat;
+  padding: 40px;
+  background-position: center;
+  background-position-y: 20px;
+  position: relative;
+
+  .p {
+
+  }
+
+  .rating_icon {
+    position: absolute;
+  }
+}
+
+
+.show__btn {
+  display: inline-block;
+  margin-top: 40px;
+  text-align: center;
+  background-color: #3E9BA6;
+  color: white;
+  width: 170px;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all ease-in .3s;
+
+  &:hover {
+    background-color: #67d0de;
+  }
+}
+
+.top__dentists {
+  background-color: #DCF2FF;
+  background-image: url('../images/dentist_bg.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-y: 0;
+  padding-bottom: 70px;
+
+  .top__dentists__cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+    .top__dentists__card {
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 1px 1px 50px 20px #f1eeee;
+      text-align: center;
+      padding: 30px 30px 30px 30px;
+
+      .contacts {
+        margin: 0 auto;
+
+        p {
+          padding-top: 20px;
+        }
+
+        .clinic__icon__small {
+          width: 40px;
+        }
+
+        .rating_icon_small {
+          width: 20px;
+        }
+      }
+    }
+
+  }
+}
+
+.slider {
+  position: relative;
+
+  .fa-arrow-circle-right {
+    position: absolute;
+    right: 0;
+    top: 65%;
+  }
+
+  .fa-arrow-circle-left {
+    position: absolute;
+    left: 0;
+    top: 65%;
+  }
+
+  .fas {
+    color: #83D0DA;
+  }
+}
+
+.dentist_avatar_img {
+  width: 112px;
+}
+
+.how__use {
+  background-color: #F2FCFF;
+
+  .tabs {
+    .tab__nav {
+      display: flex;
+    }
+
+    .tab__nav__btn {
+      color: black;
+      padding: 20px;
+      font-weight: bold;
+      border-radius: 20px;
+      transition: all ease-in .2s;
+
+      &:hover {
+        background-color: #F1FAF8;
+        box-shadow: 1px 1px 40px 2px #f1eeee;
+      }
+    }
+
+    .active__btn {
+      background-color: #F1FAF8;
+      box-shadow: 1px 1px 40px 2px #f1eeee;
+    }
+  }
+
+  .tab__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("../images/get-app-bg.png");
+    background-repeat: no-repeat;
+    background-position-y: 100px;
+
+    .text {
+      text-align: left;
+      width: 40%;
+
+      p {
+        letter-spacing: 1px;
+        line-height: 25px;
+      }
+    }
+
+    .img {
+      margin-left: 80px;
+      text-align: center;
+
+      img {
+        width: 300px;
+
+      }
+    }
+  }
+}
+
+.about__dentapp {
+  background-color: rgba(75, 178, 255, 1);
+  background-image: url("../images/about_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 80px;
+.page__title{
+  h1{
+    color: white;
+  }
+}
+  .about__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .text {
+      width: 50%;
+      color: white;
+      p{
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.get__app {
+  background-color: white;
+  background-image: url("../images/get-app-bg.png");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: -3px;
+  background-size: contain;
+  padding-bottom: 80px;
+
+  .get_app_content {
+    padding-top: 80px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 50px;
+
+    .get__app__title {
+      font-size: 36px;
+      color: #9AE2E9;
+      margin-bottom: 20px;
+    }
+
+    .get__app__logo {
+      width: 100px;
+    }
+
+    .download__app {
+      padding-top: 80px;
+
+      img {
+        width: 150px;
+
+      }
+    }
+  }
+}
+
+.reviews {
+  background-image: url("../images/get-app-bg.png");
+  //background-image: radial-gradient(farthest-corner at 40px 40px,
+  //        #fc7b90 0%, rgba(51, 210, 238, 0.3) 100%);
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: -3px;
+  background-size: contain;
+  padding-bottom: 60px;
+
+  .review__page__title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .review__title {
+    color: #9AE2E9;
+  }
+
+  .review__text {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .reviews__slider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    .reviews__slider__item {
+      line-height: 25px;
+      background-color: white;
+      border-radius: 40px;
+      padding: 30px;
+      width: 45%;
+    }
+
+
+  }
+
+  .review__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+
+    .review__author {
+      display: flex;
+      align-items: center;
+
+      .fas {
+        margin-right: 10px;
+      }
+
+    }
+
+    .review__rating {
+      .fas {
+        color: #f5e882;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.slider_arrows {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+
+  .fa-arrow-circle-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+
+  .fa-arrow-circle-left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+
+  .fas {
+    color: #83D0DA;
+  }
+}
+
+.start__now {
+  background-image: url("../images/get-app-bg.png");
+  background-color: rgba(96, 224, 238, 1);
+  background-repeat: no-repeat;
+ background-position-x:center;
+  background-size: cover;
+  padding-bottom: 60px;
+
+.page__title{
+  h1{
+    color: white;
+  }
+}
+  .start__now__content {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+
+    .text {
+      position: absolute;
+      left: 200px;
+      top: 25%;
+      box-shadow: 1px 1px 50px 20px #dae2e2;
+      border-radius: 40px;
+      padding: 20px 20px 20px 100px;
+
+      p {
+margin-top: 20px;
+        color: white;
+        line-height: 30px;
+      }
+    }
+  }
+}
+.footer{
+  background-color: #2A2929;
+  padding: 50px;
+  .footer__content{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .footer__content__second,.footer__content__third,.footer__content__four{
+    .footer__btn{
+     margin: 0;
+    }
+  }
+  .footer__content{
+    .contact__number{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    ul{
+      margin-top: 10px;
+      li{
+        margin-top: 10px;
+        .footer__nav__link{
+          color: white;
+        }
+      }
+    }
+
+
+  }
+  .contact__number{
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .social{
+    .fab{
+      color: white;
+      margin-left: 15px;
+    }
+    padding-top: 10px;
+  }
+  .footer__btn{
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border: 2px solid #ff253a;
+    padding: 10px 40px 10px 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: all ease-in .2s;
+    text-align: center;
+
+    &:hover{
+      background-color: #ff253a;
+      color: white;
+    }
+  }
+
+.subscribe{
+  margin-top: 60px;
+  input{
+    padding: 20px;
+    border: 1px solid #ff253a;
+    background-color: #2A2929;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  .send__email__btn{
+    padding: 20px;
+background-color: #ff253a;
+    border: none;
+    outline:none;
+  }
+
+  .subscribe__content{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+}
+.copyright{
+  background-color: black;
+  padding: 40px;
+  a{
+    color: #565454;
+  }
+}

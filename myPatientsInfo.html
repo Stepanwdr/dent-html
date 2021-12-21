@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="styles/detistDashboard.css">
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <title>Dentist Dashboard</title>
+</head>
+<body>
+<header class="header">
+    <div class="search">
+        <input type="text" placeholder="Search patient">
+        <button type="submit" class="search__btn"><i class="fas fa-search"></i></button>
+    </div>
+    <button class="add__btn"><i class="fas fa-calendar-plus"></i>Add appointment</button>
+    <div class="user">
+        <img src="images/dentist__icon.png" alt="avatar" class="avatar">
+        <div class="user__info">
+            <p class="user__name">Poxos Poxosyan</p>
+            <p class="user__special">
+                Therapy
+            </p>
+        </div>
+    </div>
+    <div class="nav">
+        <a href=""><i class="fas fa-bell"></i></a>
+        <a href=""><i class="fas fa-globe-europe"></i></a>
+        <a href=""><i class="fas fa-sign-out-alt"></i></a>
+    </div>
+</header>
+<nav class="navbar">
+    <div class="logo" id="logo">
+        <a href="index.html"> <img src="images/logo.png" alt="logo">
+        <p class="logo__text">DentApp</p>
+        </a>
+    </div>
+    <ul class="nav__list">
+        <li class="nav__item">
+            <a href="dentistDashboard.html" class="nav__link "><i class="fas fa-clinic-medical"></i>My Dasboard</a>
+        </li>
+        <li class="nav__item">
+            <a href="myPatients.html" class="nav__link active"><i class="fas fa-users"></i>My Patients</a>
+        </li>
+        <li class="nav__item">
+            <a href="" class="nav__link"><i class="fas fa-calendar-alt"></i>Appointments</a>
+        </li>
+
+        <li class="nav__item">
+            <a href="dentistFinance.html" class="nav__link"><i class="fas fa-money-check-alt"></i>Finance</a>
+        </li>
+        <li class="nav__item">
+            <a href="" class="nav__link"><i class="fas fa-user-cog"></i>Profile</a>
+        </li>
+        <li class="nav__item">
+            <a href="" class="nav__link"><i class="fas fa-cogs"></i>Settings</a>
+        </li>
+
+    </ul>
+</nav>
+<section class="wrapper">
+    <div class="content">
+        <div class="accordion">
+            <div class="accordion__item">
+                <div class="accordion__header">
+                        <h4><i class="fas fa-id-card"></i>Patients Information</h4>
+                        <p><i class="fas fa-window-minimize"></i></p>
+                </div>
+                <div class="accordion__body">
+                    <div class="patient__info">
+                        <div class="patient__info__head">
+                            <img src="images/patient_icon.png" alt="avatar">
+                            <p>
+                            <strong>Petros Poxosi Petrosyan</strong>
+                            <br>
+                            <span><i class="fas fa-phone-alt"></i>(+374)94 123456</span>
+                            <br>
+                            Last update:<span>June 22, 2021 at 14:00</span>
+                        </p>
+                            <div class="btns">
+                                <a href="" class="add__btn btn">Edit</a>
+                                <a href="" class="add__btn btn delete__btn">Delete</a>
+                            </div>
+                        </div>
+
+                        <div class="patient__info__body">
+                            <ul>
+                                <li>
+                                    <strong>Email :</strong> Poxosyan@mail.ru
+                                </li>
+                                <li>
+                                    <strong>Gender :</strong> Male
+                                </li>
+                                <li>
+                                    <strong>Address :</strong> Armenia,Gyumri
+                                </li>
+                                <li>
+                                    <strong>Birthdate :</strong>Sep 01, 2020
+                                </li>
+                                <li>
+                                    <strong>Age: </strong>23
+                                </li>
+                                <li>
+                                    <strong>Notes: </strong>Some notes
+                                </li>
+                                <li>
+                                    <strong>Date Added: </strong>Sep 11, 2021
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+            <div class="accordion__item">
+                <div class="accordion__header">
+                    <div class="accordion__header__title">
+                        <div><h4><i class="fas fa-clock"></i>
+                            Medical History </h4>
+                            <p class="total__files">0</p>
+                        </div>
+                        <p class="your">Your patient medical history</p>
+                    </div>
+                    <div class="btns">
+                        <button class="add__btn"><i class="fas fa-plus-circle"></i>Add medical history</button>
+                        <button class="add__btn"><i class="fas fa-file-medical"></i> Add document</button>
+                    </div>
+                    <p><i class="fas fa-window-minimize"></i></p>
+
+                </div>
+                <div class="accordion__body">
+                    <div class="medical__history">
+                        <div class="medical__history__body">
+                            No medical history
+                        </div>
+                    </div>
+
+                    <div class="medical__files">
+                        <hr>
+                        <div class="medical__files__head">
+                            <div>
+                                <div class="medical__files__head__item">
+                                <h4><i class="fas fa-file-medical-alt"></i>
+                                    Medical Files </h4>
+                                <p class="total__files">0</p>
+                            </div>
+                                <p class="your">Your patient medical files</p>
+                            </div>
+                            <div class="file__search">
+                                <input type="text" placeholder="Search file">
+                                <button type="submit" class="search__btn"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+
+
+                        <hr>
+                        <div class="medical__history__body">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>File</th>
+                                    <th>Last update</th>
+                                    <th>Remark</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td><p class="your">Make your first appointments</p></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__header">
+                    <div class="accordion__header__title">
+                        <div><h4><i class="fas fa-clock"></i>
+                            Treatment Plan </h4>
+                            <p class="total__files">0</p>
+                        </div>
+                        <p class="your">Your patients treatment plan list</p>
+                    </div>
+                    <div class="btns">
+                        <button class="add__btn"><i class="fas fa-plus-circle"></i>Add treatment plan</button>
+                    </div>
+                    <p><i class="fas fa-window-minimize"></i></p>
+
+                </div>
+                <div class="accordion__body">
+                    <div class="medical__history">
+                        <div class="medical__history__body">
+                            No medical history
+                        </div>
+                    </div>
+
+                    <div class="medical__files">
+                        <hr>
+                        <div class="medical__files__head">
+                            <div>
+                                <div class="medical__files__head__item">
+                                    <h4><i class="fas fa-file-medical-alt"></i>
+                                        Medical Files </h4>
+                                    <p class="total__files">0</p>
+                                </div>
+                                <p class="your">Your patient medical files</p>
+                            </div>
+                            <div class="file__search">
+                                <input type="text" placeholder="Search file">
+                                <button type="submit" class="search__btn"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+
+
+                        <hr>
+                        <div class="medical__history__body">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>File</th>
+                                    <th>Last update</th>
+                                    <th>Remark</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td><p class="your">Make your first appointments</p></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__header">
+                    <div class="accordion__header__title">
+                        <div><h4><i class="fas fa-clock"></i>
+                            Appointsment schedule </h4>
+                            <p class="total__files">0</p>
+                        </div>
+                        <p class="your">Your patient's next appointment list
+                        </p>
+                    </div>
+                    <div class="btns">
+                        <button class="add__btn"><i class="fas fa-calendar-plus"></i>Add appointment</button>
+                    </div>
+                    <p><i class="fas fa-window-minimize"></i></p>
+
+                </div>
+                <div class="accordion__body">
+                    <div class="appointment__schedule">
+                            <div class="appointment__schedule__head">
+                                <div class="status__select__option">
+                                    <select name="" id="">
+                                        <option value="" selected>Upcoming</option>
+                                        <option value="">Completed</option>
+                                        <option value="">Canceled</option>
+                                    </select>
+                                </div>
+                                <div class="file__search">
+                                    <input type="text" placeholder="Search file">
+                                    <button type="submit" class="search__btn"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                        <div class="appointment__schedule__body">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                    <th>Status</th>
+                                    <th>Last update</th>
+                                    <th>Notes</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td><p class="your">Make your first appointments</p></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="accordion__item">
+                <div class="accordion__header">
+                    <div class="accordion__header__title">
+                        <div><h4><i class="fas fa-clock"></i>
+                            Patient images </h4>
+                            <p class="total__files">0</p>
+                        </div>
+                        <p class="your">Your patient's uploaded images
+                        </p>
+                    </div>
+                    <div class="btns">
+                        <button class="add__btn"><i class="fas fa-calendar-plus"></i>Upload images</button>
+                    </div>
+                    <p><i class="fas fa-window-minimize"></i></p>
+
+                </div>
+                <div class="accordion__body">
+                    <div class="patient__images">
+                               <div class="patient__images__head">
+                                   <div class="file__search">
+                                       <input type="text" placeholder="Search images">
+                                       <button type="submit" class="search__btn"><i class="fas fa-search"></i></button>
+                                   </div>
+                               </div>
+
+                        <div class="patient__images__body">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Photos</th>
+                                    <th>Date created</th>
+                                    <th>Last update</th>
+                                    <th>Caption</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td><p class="your">Make your first appointments</p></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                </div>
+            </div>
+
+</div>
+            <div class="accordion__item">
+                <div class="accordion__header" id="payments">
+                    <div class="accordion__header__title">
+                        <div><h4><i class="fas fa-money-check-alt"></i>
+                            Payments </h4>
+                            <p class="total__files">0</p>
+                        </div>
+                        <p class="your">Patient payments
+                        </p>
+                    </div>
+                    <div class="btns">
+                        <button class="add__btn"><i class="fas fa-money-check-alt"></i>Add payments</button>
+                    </div>
+                    <p><i class="fas fa-window-minimize"></i></p>
+                </div>
+                <div class="accordion__body">
+                        <div class="patient__images">
+                            <div class="patient__images__head">
+                                <div class="file__search">
+                                    <input type="text" placeholder="Search payments">
+                                    <button type="submit" class="search__btn"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="patient__images__body">
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Dates</th>
+                                        <th>Amount</th>
+                                        <th>Payments method</th>
+                                        <th>Last updated</th>
+                                        <th>Remarks</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td><p class="your">Make your first appointments</p></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

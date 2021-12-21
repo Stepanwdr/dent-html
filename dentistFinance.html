@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="styles/detistDashboard.css">
+
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <title>Dentist Dashboard</title>
+</head>
+<body>
+<header class="header">
+    <div class="search">
+        <input type="text" placeholder="Search patient">
+        <button type="submit" class="search__btn"><i class="fas fa-search"></i></button>
+    </div>
+    <button class="add__btn"><i class="fas fa-calendar-plus"></i>Add appointment</button>
+    <div class="user">
+        <img src="images/dentist__icon.png" alt="avatar" class="avatar">
+        <div class="user__info">
+            <p class="user__name">Poxos Poxosyan</p>
+            <p class="user__special">
+                Therapy
+            </p>
+        </div>
+    </div>
+    <div class="nav">
+        <a href=""><i class="fas fa-bell"></i></a>
+        <a href=""><i class="fas fa-globe-europe"></i></a>
+        <a href=""><i class="fas fa-sign-out-alt"></i></a>
+    </div>
+</header>
+<nav class="navbar">
+    <div class="logo" id="logo">
+        <a href="index.html"> <img src="images/logo.png" alt="logo">
+        <p class="logo__text">DentApp</p>
+        </a>
+    </div>
+    <ul class="nav__list">
+        <li class="nav__item">
+            <a href="dentistDashboard.html" class="nav__link "><i class="fas fa-clinic-medical"></i>My Dasboard</a>
+        </li>
+        <li class="nav__item">
+            <a href="myPatients.html" class="nav__link active"><i class="fas fa-users"></i>My Patients</a>
+        </li>
+        <li class="nav__item">
+            <a href="" class="nav__link"><i class="fas fa-calendar-alt"></i>Appointments</a>
+        </li>
+        <li class="nav__item">
+            <a href="" class="nav__link"><i class="fas fa-money-bill-alt"></i>Payments</a>
+        </li>
+        <li class="nav__item">
+            <a href="" class="nav__link"><i class="fas fa-money-check-alt"></i>Finance</a>
+        </li>
+        <li class="nav__item">
+            <a href="" class="nav__link"><i class="fas fa-user-cog"></i>Profile</a>
+        </li>
+        <li class="nav__item">
+            <a href="" class="nav__link"><i class="fas fa-cogs"></i>Settings</a>
+        </li>
+
+    </ul>
+</nav>
+<section class="wrapper">
+    <div class="content">
+        <div class="col tabs my__patients__tabs">
+            <div class="tab__header">
+                <h4><i class="fas fa-money-check-alt"></i>Finance Overview</h4>
+                <div class="data__picker">16/11/2021<i class="fas fa-calendar-alt"></i></div>
+                <a href="myPatientsInfo.html" class="add__btn"><i class="fas fa-money-check-alt"></i>Add Payments</a>
+            </div>
+
+            <div class="tab">
+    <div class="row finance">
+<div class="total__payments col">
+    <div class="total__payments__title">
+        <i class="fas fa-file-invoice-dollar"></i>
+        <div class="title">
+            <h3>Total Payments</h3>
+            <p>0.00</p>
+            <hr>
+            <p>For the month of Augost</p>
+        </div>
+    </div>
+    <div class="btns">
+        <a href="" class="payments__btn"><i class="fas fa-eye"></i>View Payments</a>
+        <a href="myPatients.html" class="payments__btn"><i class="fas fa-plus" ></i>Add Payments</a>
+    </div>
+
+</div >
+<div class="total__expenses col">
+ <div class="total__expenses__title">
+         <i class="fas fa-file-invoice-dollar"></i>
+         <div class="title">
+             <h3>Total Expenses</h3>
+             <p>0.00</p>
+             <hr>
+             <p>For the month of Augost</p>
+         </div>
+     </div>
+    <div class="btns">
+        <a href="" class="total__expenses__btn"><i class="fas fa-eye"></i>View Expenses</a>
+        <a href="" class="total__expenses__btn"><i class="fas fa-plus" ></i>Add Expenses</a>
+    </div>
+ </div>
+</div>
+    </div>
+
+        </div>
+       </div>
+</section>
